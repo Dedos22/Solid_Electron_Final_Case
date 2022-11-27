@@ -1,3 +1,13 @@
+<img src="ekrangörünümleri/1.JPG">
+<img src="ekrangörünümleri/2.JPG">
+<img src="ekrangörünümleri/3.JPG">
+<img src="ekrangörünümleri/4.JPG">
+<img src="ekrangörünümleri/5.JPG">
+<img src="ekrangörünümleri/6.JPG">
+<img src="ekrangörünümleri/7.JPG">
+
+
+
 # AngularBasics
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
