@@ -1,9 +1,17 @@
-<img style="width=200px" src="1.JPG">
-<img style="width=200px" src="7.JPG">
+
+<h3>LOGİN SAYFASI</h3>
+<img style="width:400px" src="1.JPG">
+<h3>REGİSTER SAYFASI</h3>
+<img style="width:400px" src="7.JPG">
+<h3>ANASAYFA</h3>
 <img src="2.JPG">
+<h3>ÜRÜNDETAY SAYFASI</h3>
 <img src="3.JPG">
+<h3>KATEGORİ SAYFASI</h3>
 <img src="4.JPG">
+<h3>SEPET SAYFASI</h3>
 <img src="5.JPG">
+<h3>SİPARİŞ SAYFASI</h3>
 <img src="6.JPG">
 
 
