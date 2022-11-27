@@ -1,10 +1,11 @@
-<img src="1.JPG">
+<img style="width=200px" src="1.JPG">
+<img style="width=200px" src="7.JPG">
 <img src="2.JPG">
 <img src="3.JPG">
 <img src="4.JPG">
 <img src="5.JPG">
 <img src="6.JPG">
-<img src="7.JPG">
+
 
 
 <a href="https://www.patika.dev/tr" ><PATİKA</a>
