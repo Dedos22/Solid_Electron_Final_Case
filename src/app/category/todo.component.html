@@ -1,0 +1,24 @@
+
+
+<div  class="container rounded" id="Kategori" >
+  <div  class="row"  >
+   
+      <div   id="textcategory" class="col" *ngFor="let category of categoryList">
+          <a routerLink="/product/{{category.categoryname}}"  routerLinkActive="active">{{category.categoryname |uppercase}}</a>
+      </div>
+    
+
+  </div>
+  <hr>
+</div>
+
+   
+
+       
+     
+
+   
+       
+
+
+

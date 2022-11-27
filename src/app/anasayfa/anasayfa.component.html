@@ -1,0 +1,33 @@
+<navbar></navbar>
+<todo></todo>
+
+<header></header>
+
+
+<div class="container">
+  <h4>TÜM ÜRÜNLER</h4>
+
+  <div class="row">
+      <div class="card"  style="width: 12rem;"  *ngFor="let product of allProductList " >
+   
+          <a  routerLink="/product/{{product.productcategory}}/productdetay/{{product.id}}"  routerLinkActive="active"><!--ÜRÜN DETAYINA GİTMEK İÇİN ROUTER KULLANIYORUZ--> 
+           <img class="card-img-top"   style="width: 9rem;"    src="{{product.productimage}}" alt="Card image cap">
+              <div class="card-body" aria-colspan="carttext">
+                   <i class="card-title">{{product.productname.slice(0, 15) }}</i>
+   
+                    <i class="card-text">{{product.productdetay.slice(0, 15)}}</i>... <!--Metnin bir kısmını aldık parçalama işlemi ile-->
+   
+                   <i class="card-text">{{product.productprice }}</i><!--FİYAT BİLGİSİ-->
+              </div>
+          </a>
+         <button (click)="SepeteEkle(product)" class="btn btn-sm btn-primary" style="font-weight: bold">SEPETE EKLE</button><!--alertify paketini kullanmak için fonksiyon oluşturduk-->
+     </div>
+   </div>
+</div>
+ 
+
+
+
+
+
+

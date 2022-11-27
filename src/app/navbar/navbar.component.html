@@ -1,0 +1,38 @@
+
+<div  class="container">
+<nav class="navbar ">
+    <div class="container-fluid justify-content-between">
+        <div class="input-group" class="logo">
+           <div class="row">
+             <!--Logo -->
+             <div class="col"> <h2 class="pozisyon">ALIŞVERİŞ</h2></div>
+
+           </div>
+
+      </div>
+ 
+        <!--profil -->
+        <div class="logout" >
+          <i>{{username}}</i>&nbsp;&nbsp;&nbsp;
+            <i>{{productadet}}</i><!--sepetteki ürün sayısı-->
+           <a routerLink="/cart"  routerLinkActive="active"> <img style="width: 2rem;" src="https://svgsilh.com/svg_v2/294547.svg" ></a>&nbsp;<!--sepete yönlendirme-->
+            
+             
+        
+             <button routerLink="/login" (click)="logout()"  routerLinkActive="active" type="button" class="btn btn-outline-danger">Logout</button>  
+              
+    
+        </div>
+        
+       
+           
+       
+ 
+
+    </div>
+</nav>
+</div>
+<hr>
+    
+    
+  

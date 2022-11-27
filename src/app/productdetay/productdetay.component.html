@@ -1,0 +1,79 @@
+
+<!--
+<div >
+<h1>{{item.id}}</h1>
+<h1>{{item.productdetay}}</h1>
+<h1>{{item.productname}}</h1>
+<h1>{{item.marka}}</h1>
+
+</div>
+-->
+<navbar></navbar>
+<todo></todo>
+<div class="container justify-content-center align-items-center">
+<div class="card-table"  *ngFor="let item of productdetay ">
+    <h6 style="color:purple ;">Ürün Listesi>
+        <a routerLink="/product/{{deneme}}"  routerLinkActive="active" > {{deneme| uppercase}}</a> 
+        <a routerLink="/product/productdetay/{{id}}"  routerLinkActive="active" > > {{item.productname| lowercase}}</a>
+    
+    </h6> 
+</div>
+</div>
+<div  class="container justify-content-center align-items-center" style="background-color:rgb(203, 202, 200) ;">
+  
+
+     <div >
+        <div class="card-table"  *ngFor="let product of productdetay ">
+          
+            <div class="card-product">
+                <div class="row">
+                    <div class="col">
+                        <img style="width: 22rem;" src="{{product.productimage}}">
+                    </div>
+                    <div class="col">
+                        <img style="width: 11rem;" src="{{product.productdetayimage}}"><!--TABLO YAP-->
+                        <img style="width: 11rem;" src="{{product.productdetayimage2}}">
+                    </div>
+                    <div class="col-md-6">
+                        <table class="table table-hover">
+                            <tbody>
+                                <th>ÜRÜN ADI</th>
+                                <td>{{product.productname}}</td>
+                                
+                            </tbody>
+                            <tbody>
+                                <th>ÜRÜN DETAYI</th>
+                                <td>{{product.productdetay}}</td>
+                                
+                            </tbody>
+                            <tbody>
+                                <th>MARKA</th>
+                                <td>{{product.productmarka}}</td>   
+                            </tbody>
+                            <tbody>
+                                <th>YURT DIŞI SATIŞ</th>
+                                <td>YOK</td>   
+                            </tbody>
+                            <tbody>
+                                <th>İPTAL VE İADE KOŞULLARI</th>
+                                <td>
+                                   <p> İade işlemlerinizi aşağıdaki şekilde yapmalısınız:
+Ürünlerinizi teslim aldığınız tarihten itibaren 14 gün içerisinde ücretsiz ve kolayca iade edebilirsiniz. "Siparişlerim" sayfasından "Kolay iade et" başvurusunda bulunarak iade sürecinizi başlatabilirsiniz.
+"Adresimden ücretsiz teslim alınsın" veya "Kargoya teslim edeceğim" seçeneklerinden birini kullanarak aldığınız kargo koduyla, dilerseniz kapınızdan, dilerseniz kargo şubesine veya Hepsimat teslimat noktalarına bırakarak ürününüzü teslim edebilirsiniz.
+Ürünü iade etmek için tüm aparatlarıyla eksiksiz bir şekilde, orijinal kutusuyla birlikte göndermelisiniz. İadenizin kabul edilmesi için ürünün hasar görmemiş ve kullanılmamış olması gerekmektedir.
+Detaylı bilgiye buradan ulaşabilirsiniz.</p>
+                                </td>   
+                            </tbody>
+                            
+                        </table>
+                       
+                    </div>
+                     <button (click)="SepeteEkle(product)"  class="btn btn-sm btn-success btn-block  rounded-5"  style="font-weight: bold;min-height: 50px;">SEPETE EKLE</button>
+                     
+                </div>
+
+            </div>
+        </div>
+      
+     </div>
+</div>

@@ -1,0 +1,65 @@
+<navbar></navbar>
+
+<ng-container *ngIf="true">
+<div class="container">
+    <div><a style="color:orangered ;" routerLink="/anasayfa"  routerLinkActive="active">ANASAYFA</a><i> > SEPETİM  ></i>
+     
+    </div>
+    <div><a style="color:orangered ;" routerLink="/siparis"  routerLinkActive="active">SİPARİŞLERİM</a>
+     
+    </div>
+   
+    <div class="card-table">
+        <div class="card-product">
+            <table class="table table-responsive">
+                <thead>
+                    <tr>
+                        <th>Ürünid</th>
+                        <th>Ürün Adı</th>
+                        <th>Ürün resmi</th>
+                        <th>Ürün Detay</th>
+                        <th>Fiyat</th>
+                        <th>Adet</th>
+                        <th>Durum</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let product of Products" >
+                        <td>{{product.id}}</td>
+                        <td>{{product.productname}}</td>
+                        <td><img style="width:10rem" src="{{product.productimage}}"></td>
+                        <td>{{product.productdetay}}</td>
+                        <td>{{product.productprice}}</td>
+                        <td>True</td>
+                      
+                        <td>
+                            <button (click)="delete(product)" class="btn btn-danger">
+                                SİL
+                            </button>
+                            <button (click)="siparis(product)" class="btn btn-success">SİPARİŞ VER</button>
+                        </td>
+                    </tr>
+                </tbody>
+                
+            </table>
+            
+        </div>
+        
+    </div>
+</div>
+
+</ng-container>
+
+<ng-container *ngIf="false">
+<div class="container">
+    <div class="card">
+        <h5 class="card-title">My Cart</h5>
+    </div>
+    <div class="center">
+        <img src="https://cdn.dribbble.com/users/2046015/screenshots/5973727/media/a603779536f0491b4be24ba2d03903e1.gif" alt="">
+        <h4>Kart bilgilerin boş</h4>
+        <h6>Şimdi ekle</h6>
+        <button class="btn btn-primary">SATIN AL</button>
+    </div>
+</div>
+</ng-container>

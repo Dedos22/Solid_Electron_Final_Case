@@ -1,0 +1,32 @@
+
+<navbar></navbar>
+<todo></todo>
+<div class="container">
+    <div><a style="color:orangered ;" routerLink="/anasayfa"  routerLinkActive="active">ANASAYFA</a>
+      <a style="color:orangered ;" routerLink="/cart"  routerLinkActive="active">  > SEPETİM  ></a>
+    <a style="color:purple ;" routerLink="/siparis"  routerLinkActive="active">SİPARİŞLERİM</a>
+     
+    </div><br>
+<table class="table table-striped table-dark">
+    <thead>
+      <tr>
+        <th scope="col">ÜRÜN KODU</th>
+        <th scope="col">TARiH</th>
+        <th scope="col">ÜRÜN</th>
+        <th scope="col">DURUM</th>
+      
+        <th scope="col">TESLİMAT ADRESİ</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of siparislerim" >
+        <th scope="row">{{product.id}}</th>
+        <td>{{product.tarih}}</td>
+        <td>{{product.productname}}</td>
+        <td>Siparişiniz hazırlanıyor...</td>
+        <td>{{product.adres}}</td>
+      </tr>
+ 
+    </tbody>
+  </table>
+</div>

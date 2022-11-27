@@ -1,0 +1,38 @@
+h2:hover {
+    color:  rgb(85, 61, 112)
+}
+h2 {
+    text-decoration:none;
+    color:orangered;
+   
+ }
+.pozisyon{
+    width: 165px;
+    padding-top: 45px;
+}
+.resim2{
+    width: 80px;
+}
+.logout{
+    padding-left: 20px;
+    padding-top: 45px;
+}
+
+.sembol{
+    color: black;
+    font-size: 25px;
+}
+.login{
+    padding-left:40px;
+  
+
+}
+.arama{
+    width:450px; background-color:rgb(230, 223, 233); border:1px solid #f6f1f1;
+    font:bold 14px tahoma;
+}
+
+.find{
+    padding-left:40px;
+}
+

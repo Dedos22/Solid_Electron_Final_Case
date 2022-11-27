@@ -1,0 +1,18 @@
+
+/* link üzerine geldiğimiz anda eklenecek css kodları */
+a:hover {
+    color: rgb(156, 119, 249);
+}
+a {
+    text-decoration:none;
+    color:rgb(255, 255, 255)
+ }
+ #Kategori{
+    background-color:orangered;
+ 
+   
+ }
+ #textcategory{
+   padding-top: 10px;
+   
+ }

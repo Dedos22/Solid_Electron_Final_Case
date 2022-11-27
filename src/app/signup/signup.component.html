@@ -1,0 +1,63 @@
+
+
+<section class="h-100 gradient-form" style="background-color: #eee;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-xl-5">
+          <div class="card rounded-3 text-black">
+            <div class="row g-0">
+              <div class="col">
+                <div class="card-body p-md-5 mx-md-4">
+  
+                  <div class="text-center">
+                    <img src="https://us.123rf.com/450wm/mevar/mevar1703/mevar170300076/74682825-vector-illustration-of-a-beautiful-young-woman-with-shopping-bags-shopping-woman-isolated-on-white-b.jpg?ver=6"
+                      style="width: 185px;" alt="logo">
+                    <h4 class="mt-1 mb-5 pb-1">ALIŞVERİŞ</h4>
+                  </div>
+                  <p>Register</p>
+                  <body ng-app="ValidationModule" ng-controller="ValidationController">
+                  <form  name="Form"  [formGroup]="signupForm" (ngSubmit)="signUp()" > <!--verileri signUp() fonksiyonuna  göndermek için  -->
+              
+  
+                    <div class="form-outline mb-4"> <!-- formControlName="fullname" -->
+                      <label class="form-label" for="form2Example11">Username</label>
+                      <input formControlName="fullname" name="name" type="text" id="name" class="form-control"  />
+                     
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="form2Example22">E-mail</label>
+                        <input formControlName="email"  type="email" id="mail" class="form-control"  /><!-- formControlName="email" -->
+                      
+                    </div>
+
+                    <div class="form-outline mb-4"> <!-- formControlName="password" -->
+                      <label class="form-label" for="form2Example2">Password</label>
+                      <input formControlName="password" type="password" id="password" class="form-control" />
+                     
+                    </div>
+  
+                    <div class="text-center pt-1 mb-5 pb-1">
+                    
+                    
+                      <button type="submit"   class="btn btn-primary mb-2"  >Register</button>
+                    </div>
+  
+                  
+  
+                  </form>
+                </body>
+                  <div class="d-flex align-items-center justify-content-center pb-4">
+                    <p class="mb-0 me-2">Kaydınız var mı?</p>
+                    <button routerLink="/login"    routerLinkActive="active" type="button" class="btn btn-outline-danger">Login Pages</button>
+                  </div>
+  
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

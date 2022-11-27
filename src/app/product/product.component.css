@@ -1,0 +1,26 @@
+.card{
+margin: 22px;
+padding: 22px;
+
+}
+
+i{
+font-size: small;
+color: black;
+}
+#search{
+    padding: 4px;
+    width: 100px;
+    
+}
+#buttonn{
+    padding: 4px;
+    width: 50px;
+    
+}
+#cardsearch{
+    border-color: rgb(121, 75, 138);
+}
+a{
+    color: darkorange;
+}

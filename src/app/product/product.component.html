@@ -1,0 +1,75 @@
+<navbar></navbar>
+<todo></todo>
+
+<div class="container" >
+  <div class="row" >
+    <div class="col-md-3"><!--search-->
+      <div class="card border-warning mb-3" style="max-width: 50rem;">
+        <div class="card-header">Search</div>
+        <div class="card-body text-warning">
+          <div class="col" class="pozisyon"><input  type="text" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" [(ngModel)] ="searchTerm" (keyup)="search($event)" ></div>
+         
+        </div>
+      </div><!--end search-->
+
+
+
+      <div class="card" style="width:50 rem;"> <!--reklam-->
+        <img class="card-img-top" src="https://images.hepsiburada.net/banners/s/0/448-742/homepageImage2144_20221121094047.jpeg/format:webp" alt="Card image cap">
+        <div class="card-body">
+         
+          
+        </div>
+      </div> <!--reklam finish-->
+     
+
+
+
+
+    </div>
+
+      <div class="col-md-9" > <!--ürünleri çekme kısmı-->
+        <div class="row"  >
+           <div>
+             <h6 style="color:purple ;" *ngIf="productList ; else:noProduct ">
+              <a routerLink="/anasayfa"  routerLinkActive="active">{{title}} </a> >
+              <a routerLink="/product/{{categoryname}}"  routerLinkActive="active" > {{categoryname | uppercase}} </a></h6><!--if else yapısı-->
+               <ng-template #noProduct>
+                <div class="alert alert-primary" role="alert"><!--ürün yoksa veritabanında bu kısım çalışır-->
+                  Bu kategoriye ait ürün bulunmamaktadır!
+                </div>
+              </ng-template>
+            </div>
+          
+          <div class="card"  style="width: 12rem;"  *ngFor="let product of productList | filter:searchword:'productname'"  ><!--filtreleme işlemi pipe ile-->
+           <!--ÜRÜN DETAYINA GİTMEK İÇİN ROUTER KULLANIYORUZ--> 
+          <a  routerLink="/product/{{categoryname}}/productdetay/{{product.id}}"  routerLinkActive="active"><img class="card-img-top"   style="width: 9rem;"    src="{{product.productimage}}" alt="Card image cap">
+          <div class="card-body" aria-colspan="carttext">
+            
+            <i class="card-title">{{product.productname.slice(0, 15) }}</i>
+            
+            <i class="card-text">{{product.productdetay.slice(0, 15)}}</i>... <!--Metnin bir kısmını aldık parçalama işlemi ile-->
+            
+            <i class="card-text">{{product.productprice }}</i><!--FİYAT BİLGİSİ-->
+            
+
+          </div>
+        </a>
+         
+          <button (click)="SepeteEkle(product)"   class="btn btn-sm btn-primary" style="font-weight: bold">SEPETE EKLE</button><!--alertify paketini kullanmak için fonksiyon oluşturduk-->
+        
+        </div>
+        </div>
+      </div>
+    <!--<div  class="col-md-1">
+      duyurular ,indirimler vs.
+       <div> <img style="width: 10rem;" src="https://images.hepsiburada.net/banners/s/0/448-742/homepageImage2144_20221121094047.jpeg/format:webp"></div>
+        <div><img style="width: 10rem;" src="https://images.hepsiburada.net/banners/s/0/227-403/marketingbillboard_20221121093736.jpeg/format:webp"></div>
+      </div> -->
+  </div>
+ 
+</div>
+
+
+
+
