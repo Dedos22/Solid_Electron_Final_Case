@@ -117,7 +117,11 @@ export class ApiService{
    .then(data=>{
    
    })
-  
+        
+   setTimeout(function(){
+          
+            window.location.reload();
+           }, 100);
 
  
      }
