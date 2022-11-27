@@ -7,7 +7,7 @@
 <img src="7.JPG">
 
 
-<img src="https://www.patika.dev/tr">PATİKA
+<a href="https://www.patika.dev/tr" ><PATİKA</a>
 
 # AngularBasics
 
